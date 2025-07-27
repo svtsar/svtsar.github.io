@@ -1,0 +1,20 @@
+project:
+  type: website
+
+lang: ru
+
+format:
+  html:
+    theme: cosmo
+    toc: false
+    number-sections: false
+    css: styles.css
+    self-contained: true
+
+author:
+  - name:
+      given: Сергей
+      family: Царегородцев
+      literal: С.В. Царегородцев
+    orcid: 0000-0002-0254-0516
+    email: sergiotsar@ya.ru 
