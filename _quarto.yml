@@ -1,0 +1,40 @@
+project:
+  type: website
+  output-dir: _site
+
+lang: ru
+
+format:
+  html:
+    theme: cosmo
+    toc: false
+    css: styles.css
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    include-after-body:
+      - text: |
+          <script>
+            // Add smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+                });
+              });
+            });
+          </script>
+
+author:
+  - name:
+      given: Сергей
+      family: Царегородцев
+      literal: С.В. Царегородцев
+    orcid: 0000-0002-0254-0516
+    email: sergiotsar@ya.ru
+    url: https://svtsar.github.io
+
+site-url: https://svtsar.github.io
+
+prefer-html: true 
