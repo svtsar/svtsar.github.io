@@ -84,13 +84,13 @@ format:
     </a>
   </div>
   <div class="publication-link-item">
-    <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank" class="publication-link scholar">
+    <a href="https://scholar.google.com/citations?user=7u0KVSYAAAAJ&hl=ru" target="_blank" class="publication-link scholar">
       <i class="fas fa-graduation-cap"></i>
       Google Scholar
     </a>
   </div>
   <div class="publication-link-item">
-    <a href="https://elibrary.ru/author_profile.asp?id=YOUR_ELIBRARY_ID" target="_blank" class="publication-link elibrary">
+    <a href="https://elibrary.ru/author_items.asp?authorid=1004017&show_refs=1" target="_blank" class="publication-link elibrary">
       <i class="fas fa-book"></i>
       eLibrary
     </a>
