@@ -170,98 +170,69 @@ li {
     padding: 1.5rem;
 }
 
-/* Publications Widget */
-.publications-widget {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 15px;
-    padding: 2rem;
-    margin: 2rem 0;
-    border: 1px solid #dee2e6;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.publications-widget h3 {
-    color: #495057;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-.publications-list {
-    margin-bottom: 1.5rem;
-}
-
-.publication-item {
+/* Publications Links */
+.publications-links {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: white;
-    border-radius: 10px;
-    border-left: 4px solid #3498db;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
 }
 
-.publication-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.publication-year {
-    background: #3498db;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin-right: 1rem;
-    min-width: 60px;
-    text-align: center;
-    flex-shrink: 0;
-}
-
-.publication-content {
+.publication-link-item {
     flex: 1;
+    min-width: 200px;
+    max-width: 300px;
 }
 
-.publication-title {
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
-}
-
-.publication-journal {
-    color: #6c757d;
-    font-size: 0.9rem;
-    font-style: italic;
-}
-
-.publications-footer {
-    text-align: center;
-    padding-top: 1rem;
-    border-top: 1px solid #dee2e6;
-}
-
-.orcid-link {
-    display: inline-block;
-    background: #a6ce39;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
+.publication-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    min-height: 60px;
 }
 
-.orcid-link:hover {
-    background: #95c22b;
+.publication-link i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.publication-link.orcid {
+    background: linear-gradient(135deg, #a6ce39 0%, #95c22b 100%);
+}
+
+.publication-link.orcid:hover {
+    background: linear-gradient(135deg, #95c22b 0%, #8bb82a 100%);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    text-decoration: none;
-    color: white;
+}
+
+.publication-link.scholar {
+    background: linear-gradient(135deg, #4285f4 0%, #3367d6 100%);
+}
+
+.publication-link.scholar:hover {
+    background: linear-gradient(135deg, #3367d6 0%, #2a56c6 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.publication-link.elibrary {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+.publication-link.elibrary:hover {
+    background: linear-gradient(135deg, #c82333 0%, #bd2130 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Badge styling for project links */

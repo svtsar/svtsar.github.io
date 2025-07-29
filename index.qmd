@@ -58,7 +58,7 @@ format:
 
 ## Навыки
 
-:::: panel-tabset
+::: panel-tabset
 ### Преподавание
 
 -   Фармакология для студентов лечебного и стоматологического факультетов
@@ -72,113 +72,30 @@ format:
 -   Статистический анализ и визуализация в R (ggplot2, dplyr), работа с Quarto и Markdown
 -   Git / GitHub
 -   Поиск и систематизация научной литературы: Zotero, Research Rabbit
-
-## 
+:::
 
 ## Публикации
 
-```{r}
-#| message: false
-#| warning: false
-#| error: true
-#| echo: false
-#| results: asis
-
-# Проверяем доступность пакетов
-required_packages <- c("rorcid", "tibble", "janitor", "dplyr", "knitr")
-missing_packages <- required_packages[!sapply(required_packages, requireNamespace, quietly = TRUE)]
-
-if (length(missing_packages) > 0) {
-  install.packages(missing_packages)
-}
-
-# Загружаем библиотеки
-library(tibble)
-library(janitor)
-library(dplyr)
-library(knitr)
-
-# Пытаемся загрузить rorcid и получить данные
-tryCatch({
-  library(rorcid)
-  
-  orc_id <- "0000-0002-0254-0516"
-  
-  # Получаем работы и превращаем в чистую таблицу
-  works_df <- rorcid::works(orc_id) %>%
-    tibble::as_tibble() %>%
-    janitor::clean_names() %>%
-    transmute(
-      title = title_title_value,
-      journal = journal_title_value,
-      year = publication_date_year_value
-    ) %>%
-    mutate(
-      year = as.character(year)
-    ) %>%
-    arrange(desc(year))
-  
-  # Создаем красивый виджет
-  cat('<div class="publications-widget">')
-  cat('<h3>📚 Последние публикации</h3>')
-  cat('<div class="publications-list">')
-  
-  if (nrow(works_df) > 0) {
-    for (i in 1:min(5, nrow(works_df))) {
-      cat('<div class="publication-item">')
-      cat('<div class="publication-year">', works_df$year[i], '</div>')
-      cat('<div class="publication-content">')
-      cat('<div class="publication-title">', works_df$title[i], '</div>')
-      if (!is.na(works_df$journal[i]) && works_df$journal[i] != "") {
-        cat('<div class="publication-journal">', works_df$journal[i], '</div>')
-      }
-      cat('</div>')
-      cat('</div>')
-    }
-  } else {
-    cat('<p>Данные о публикациях загружаются...</p>')
-  }
-  
-  cat('</div>')
-  cat('<div class="publications-footer">')
-  cat('<a href="https://orcid.org/0000-0002-0254-0516" target="_blank" class="orcid-link">')
-  cat('🔗 Посмотреть все публикации на ORCID')
-  cat('</a>')
-  cat('</div>')
-  cat('</div>')
-  
-}, error = function(e) {
-  # Если не удалось получить данные из ORCID, показываем статический список
-  cat('<div class="publications-widget">')
-  cat('<h3>📚 Последние публикации</h3>')
-  cat('<div class="publications-list">')
-  cat('<div class="publication-item">')
-  cat('<div class="publication-year">2023</div>')
-  cat('<div class="publication-content">')
-  cat('<div class="publication-title">Исследования микробиоты полости рта и кишечника у пациентов с COVID-19</div>')
-  cat('</div>')
-  cat('</div>')
-  cat('<div class="publication-item">')
-  cat('<div class="publication-year">2022</div>')
-  cat('<div class="publication-content">')
-  cat('<div class="publication-title">Оценка безопасности ингаляционных форм дексаметазона</div>')
-  cat('</div>')
-  cat('</div>')
-  cat('<div class="publication-item">')
-  cat('<div class="publication-year">2021</div>')
-  cat('<div class="publication-content">')
-  cat('<div class="publication-title">Исследования наносомальных форм лекарственных препаратов</div>')
-  cat('</div>')
-  cat('</div>')
-  cat('</div>')
-  cat('<div class="publications-footer">')
-  cat('<a href="https://orcid.org/0000-0002-0254-0516" target="_blank" class="orcid-link">')
-  cat('🔗 Посмотреть все публикации на ORCID')
-  cat('</a>')
-  cat('</div>')
-  cat('</div>')
-})
-```
+<div class="publications-links">
+  <div class="publication-link-item">
+    <a href="https://orcid.org/0000-0002-0254-0516" target="_blank" class="publication-link orcid">
+      <i class="fas fa-id-badge"></i>
+      ORCID Profile
+    </a>
+  </div>
+  <div class="publication-link-item">
+    <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank" class="publication-link scholar">
+      <i class="fas fa-graduation-cap"></i>
+      Google Scholar
+    </a>
+  </div>
+  <div class="publication-link-item">
+    <a href="https://elibrary.ru/author_profile.asp?id=YOUR_ELIBRARY_ID" target="_blank" class="publication-link elibrary">
+      <i class="fas fa-book"></i>
+      eLibrary
+    </a>
+  </div>
+</div>
 
 ## Контакты
 
@@ -191,4 +108,3 @@ tryCatch({
 ::: footer
 jr
 :::
-::::
