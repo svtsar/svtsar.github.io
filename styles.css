@@ -2,33 +2,62 @@
 .hero-section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 60px 0;
-    margin: -2rem -2rem 2rem -2rem;
+    padding: 80px 20px;
+    margin: -2rem -2rem 3rem -2rem;
     border-radius: 0 0 15px 15px;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-section h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.2;
 }
 
 .hero-section p {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.hero-section .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
 }
 
 .social-links {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .social-links img {
-    margin: 0 10px;
+    margin: 0;
     transition: transform 0.3s ease;
+    display: inline-block;
 }
 
 .social-links img:hover {
     transform: scale(1.1);
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 3rem;
+    padding: 0;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9ecef;
 }
 
 /* Contact Info */
@@ -100,25 +129,45 @@
 
 /* Panel tabs styling */
 .panel-tabset .tab-content {
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid #dee2e6;
     border-top: none;
     border-radius: 0 0 5px 5px;
+    margin-top: 0;
 }
 
 .panel-tabset .nav-tabs {
     border-bottom: 1px solid #dee2e6;
+    margin-bottom: 0;
 }
 
 .panel-tabset .nav-tabs .nav-link {
     border: 1px solid transparent;
     border-radius: 5px 5px 0 0;
     margin-right: 2px;
+    padding: 0.75rem 1.5rem;
 }
 
 .panel-tabset .nav-tabs .nav-link.active {
     border-color: #dee2e6 #dee2e6 #fff;
     background-color: #fff;
+}
+
+/* List styling */
+ul, ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Callout spacing */
+.callout {
+    margin: 2rem 0;
+    padding: 1.5rem;
 }
 
 /* Badge styling for project links */
