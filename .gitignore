@@ -1,0 +1,15 @@
+# Quarto
+_site/
+*.qmd~
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
