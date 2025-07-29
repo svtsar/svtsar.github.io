@@ -13,3 +13,5 @@ _site/
 # Temporary files
 *.tmp
 *.temp
+
+/.quarto/
