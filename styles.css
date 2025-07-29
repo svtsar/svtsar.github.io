@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #333333 0%, #666666 100%);
     color: white;
     padding: 80px 20px;
     margin: -2rem -2rem 3rem -2rem;
@@ -66,7 +66,7 @@ section h2 {
     padding: 2rem;
     border-radius: 10px;
     margin: 2rem 0;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #333333;
 }
 
 .contact-info ul {
@@ -82,7 +82,7 @@ section h2 {
 
 .contact-info li:before {
     content: "•";
-    color: #3498db;
+    color: #333333;
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -100,15 +100,15 @@ section h2 {
 
 /* Callout customization */
 .callout-note {
-    border-left-color: #3498db;
+    border-left-color: #333333;
 }
 
 .callout-tip {
-    border-left-color: #28a745;
+    border-left-color: #666666;
 }
 
 .callout-info {
-    border-left-color: #17a2b8;
+    border-left-color: #999999;
 }
 
 /* Responsive design */
@@ -170,8 +170,8 @@ li {
     padding: 1.5rem;
 }
 
-/* Publications Links */
-.publications-links {
+/* Simple Links */
+.simple-links {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -179,13 +179,13 @@ li {
     margin: 2rem 0;
 }
 
-.publication-link-item {
+.simple-link-item {
     flex: 1;
     min-width: 200px;
     max-width: 300px;
 }
 
-.publication-link {
+.simple-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,44 +195,25 @@ li {
     font-weight: 500;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: white;
+    color: #333333;
     text-align: center;
     min-height: 60px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
 }
 
-.publication-link i {
+.simple-link i {
     margin-right: 0.5rem;
     font-size: 1.2rem;
+    color: #666666;
 }
 
-.publication-link.orcid {
-    background: linear-gradient(135deg, #a6ce39 0%, #95c22b 100%);
-}
-
-.publication-link.orcid:hover {
-    background: linear-gradient(135deg, #95c22b 0%, #8bb82a 100%);
+.simple-link:hover {
+    background: #e9ecef;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.publication-link.scholar {
-    background: linear-gradient(135deg, #4285f4 0%, #3367d6 100%);
-}
-
-.publication-link.scholar:hover {
-    background: linear-gradient(135deg, #3367d6 0%, #2a56c6 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.publication-link.elibrary {
-    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
-}
-
-.publication-link.elibrary:hover {
-    background: linear-gradient(135deg, #c82333 0%, #bd2130 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: #333333;
 }
 
 /* Badge styling for project links */

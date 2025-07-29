@@ -11,14 +11,14 @@ format:
 ---
 
 :::: hero-section
-# Сергей Царегородцев {.display-4 .fw-bold}
+# Сергей Царегородцев
 
 **Преподаватель-фармакологии \| Врач-исследователь**
 
 *Российский университет медицины*
 
 ::: social-links
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--0254--0516-green?style=flat-square&logo=orcid)](https://orcid.org/0000-0002-0254-0516)  [![GitHub](https://img.shields.io/badge/GitHub-svtsar-black?style=flat-square&logo=github)](https://github.com/svtsar)  [![Telegram](https://img.shields.io/badge/Telegram-@pharmRUM-blue?style=flat-square&logo=telegram)](https://t.me/pharmRUM)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--0254--0516-green?style=flat-square&logo=orcid)](https://orcid.org/0000-0002-0254-0516) 
 :::
 ::::
 
@@ -26,8 +26,8 @@ format:
 
 Я работаю преподавателем на кафедре фармакологии в Российском университете медицины, веду кружок по научной работе студентов и пишу кандидатскую диссертацию. В своей деятельности объединяю преподавание, исследовательскую практику и управление образовательными проектами. Использую язык R для анализа статистических данных и многого другого (например, эта страница сделана с помощью Quarto)
 
-::: callout-note
-Создал и поддерживаю [Страницу СНК фармакологии](https://svtsar.github.io/SNK/docs/) — страницу для помощи в научной работе для студентов. На сайте собраны материалы по поиску научной информации, критической оценке источников, оформлению библиографии и участию в научных конкурсах.
+::: {.callout-note icon="false"}
+Работаю над [страницей СНК фармакологии](https://svtsar.github.io/SNK/docs/). На сайте собраны материалы по поиску научной информации, критической оценке источников, оформлению библиографии и участию в научных конкурсах.
 :::
 
 ## Образование
@@ -50,12 +50,6 @@ format:
 -   **Специалист по проектам** (Проектное бюро ректората МГМСУ/РУМ, 2019–2024) — управление образовательными и научными проектами.
 -   **Старший лаборант/клинический ординатор** (кафедра терапии, клинической фармакологии и скорой медицинской помощи МГМСУ, 2017–2020) — участие в лечебной и научной работе, преподавательской деятельности.
 
-## Исследовательская деятельность
-
--   **Исследования COVID‑19:** соавтор работ по изучению микробиоты полости рта и кишечника у пациентов с COVID‑19, поиску биомаркеров тяжёлых форм заболевания и оценке безопасности ингаляционных форм дексаметазона.
--   **Фармакокинетика и доставка лекарств:** исследования использования наносомальных форм лекарственных препаратов.
--   **Клинические исследования:** участие в проектах по разработке и оценке лекарственных средств (K‑877‑302 — пемафибрат для снижения кардиоваскулярных осложнений и другие НИР), работа врачом‑исследователем.
-
 ## Навыки
 
 ::: panel-tabset
@@ -67,6 +61,12 @@ format:
     -   Критический анализ и структура литературных обзоров
     -   Научное письмо
 
+## Исследовательская деятельность
+
+-   **Исследования COVID‑19:** соавтор работ по изучению микробиоты полости рта и кишечника у пациентов с COVID‑19, поиску биомаркеров тяжёлых форм заболевания и оценке безопасности ингаляционных форм дексаметазона.
+-   **Фармакокинетика и доставка лекарств:** исследования использования наносомальных форм лекарственных препаратов.
+-   **Клинические исследования:** участие в проектах по разработке и оценке лекарственных средств (K‑877‑302 — пемафибрат для снижения кардиоваскулярных осложнений и другие НИР), работа врачом‑исследователем.
+
 ### Анализ данных и цифровые инструменты
 
 -   Статистический анализ и визуализация в R (ggplot2, dplyr), работа с Quarto и Markdown
@@ -74,39 +74,37 @@ format:
 -   Поиск и систематизация научной литературы: Zotero, Research Rabbit
 :::
 
-## Публикации
+## Контакты
 
-<div class="publications-links">
-  <div class="publication-link-item">
-    <a href="https://orcid.org/0000-0002-0254-0516" target="_blank" class="publication-link orcid">
+-   **E‑mail:** [sergiotsar\@ya.ru](mailto:sergiotsar@ya.ru)
+
+-   **Личный телеграм** [\@tsarsergey](https://t.me/tsarsergey)
+
+-   **ORCID:** [0000‑0002‑0254‑0516](https://orcid.org/0000-0002-0254-0516)
+
+-   **Телеграм‑канал СНК:** [\@pharmRUM](https://t.me/pharmRUM)
+
+-   **База знаний СНК:** <https://svtsar.github.io/SNK/docs/>
+
+-   **GitHub:** [svtsar](https://github.com/svtsar)
+
+<div class="simple-links">
+  <div class="simple-link-item">
+    <a href="https://orcid.org/0000-0002-0254-0516" target="_blank" class="simple-link">
       <i class="fas fa-id-badge"></i>
       ORCID Profile
     </a>
   </div>
-  <div class="publication-link-item">
-    <a href="https://scholar.google.com/citations?user=7u0KVSYAAAAJ&hl=ru" target="_blank" class="publication-link scholar">
+  <div class="simple-link-item">
+    <a href="https://scholar.google.com/citations?user=7u0KVSYAAAAJ&hl=ru" target="_blank" class="simple-link">
       <i class="fas fa-graduation-cap"></i>
       Google Scholar
     </a>
   </div>
-  <div class="publication-link-item">
-    <a href="https://elibrary.ru/author_items.asp?authorid=1004017&show_refs=1" target="_blank" class="publication-link elibrary">
+  <div class="simple-link-item">
+    <a href="https://elibrary.ru/author_items.asp?authorid=1004017&show_refs=1" target="_blank" class="simple-link">
       <i class="fas fa-book"></i>
       eLibrary
     </a>
   </div>
 </div>
-
-<!-- Обновлено: 29.07.2024 -->
-
-## Контакты
-
--   **E‑mail:** [sergiotsar\@ya.ru](mailto:sergiotsar@ya.ru)
--   **Телеграм‑канал СНК:** [\@pharmRUM](https://t.me/pharmRUM)
--   **База знаний СНК:** <https://svtsar.github.io/SNK/docs/>
--   **ORCID:** [0000‑0002‑0254‑0516](https://orcid.org/0000-0002-0254-0516)
--   **GitHub:** [svtsar](https://github.com/svtsar)
-
-::: footer
-jr
-:::
