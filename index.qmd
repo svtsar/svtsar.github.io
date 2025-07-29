@@ -97,6 +97,8 @@ format:
   </div>
 </div>
 
+<!-- Обновлено: 29.07.2024 -->
+
 ## Контакты
 
 -   **E‑mail:** [sergiotsar\@ya.ru](mailto:sergiotsar@ya.ru)
