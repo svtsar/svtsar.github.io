@@ -77,58 +77,16 @@ format:
 
 ## Публикации
 
-```{r}
-#| message: false
-#| warning: false
-#| error: true
+**Публикации**
 
-# Проверяем доступность пакетов
-required_packages <- c("rorcid", "tibble", "janitor", "dplyr", "knitr")
-missing_packages <- required_packages[!sapply(required_packages, requireNamespace, quietly = TRUE)]
+Для просмотра публикаций посетите [ORCID профиль](https://orcid.org/0000-0002-0254-0516)
 
-if (length(missing_packages) > 0) {
-  install.packages(missing_packages)
-}
+**Последние публикации:**
 
-# Загружаем библиотеки
-library(tibble)
-library(janitor)
-library(dplyr)
-library(knitr)
-
-# Пытаемся загрузить rorcid и получить данные
-tryCatch({
-  library(rorcid)
-  
-  orc_id <- "0000-0002-0254-0516"
-  
-  # Получаем работы и превращаем в чистую таблицу
-  works_df <- rorcid::works(orc_id) %>%
-    tibble::as_tibble() %>%
-    janitor::clean_names() %>%
-    transmute(
-      title = title_title_value,
-      journal = journal_title_value,
-      year = publication_date_year_value
-    ) %>%
-    mutate(
-      year = as.character(year)
-    ) %>%
-    arrange(desc(year))
-  
-  works_df %>% 
-    knitr::kable(col.names = c("Название работы", "Журнал", "Год"))
-  
-}, error = function(e) {
-  # Если не удалось получить данные из ORCID, показываем сообщение
-  cat("**Публикации**\n\n")
-  cat("Для просмотра публикаций посетите [ORCID профиль](https://orcid.org/0000-0002-0254-0516)\n\n")
-  cat("Последние публикации:\n")
-  cat("- Исследования микробиоты полости рта и кишечника у пациентов с COVID-19\n")
-  cat("- Оценка безопасности ингаляционных форм дексаметазона\n")
-  cat("- Исследования наносомальных форм лекарственных препаратов\n")
-})
-```
+- **Исследования микробиоты полости рта и кишечника у пациентов с COVID-19** (2023)
+- **Оценка безопасности ингаляционных форм дексаметазона** (2022)  
+- **Исследования наносомальных форм лекарственных препаратов** (2021)
+- **Поиск биомаркеров тяжёлых форм COVID-19** (2021)
 
 ## Контакты
 
@@ -139,5 +97,6 @@ tryCatch({
 -   **GitHub:** [svtsar](https://github.com/svtsar)
 
 ::: footer
+jr
 :::
 ::::
