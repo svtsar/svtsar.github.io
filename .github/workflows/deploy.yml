@@ -24,9 +24,15 @@ jobs:
     - name: Render
       run: quarto render
       
+    - name: Copy files to root
+      run: |
+        cp _site/index.html ./
+        cp _site/styles.css ./
+        cp -r _site/site_libs ./
+      
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site 
+        publish_dir: ./ 
