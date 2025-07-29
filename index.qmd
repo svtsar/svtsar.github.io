@@ -88,21 +88,23 @@ format:
 
 -   **GitHub:** [svtsar](https://github.com/svtsar)
 
-<div class="simple-links">
-  <div class="simple-link-item">
-    <a href="https://orcid.org/0000-0002-0254-0516" target="_blank" class="simple-link">
+## Публикации
+
+<div class="publications-links">
+  <div class="publication-link-item">
+    <a href="https://orcid.org/0000-0002-0254-0516" target="_blank" class="publication-link orcid">
       <i class="fas fa-id-badge"></i>
       ORCID Profile
     </a>
   </div>
-  <div class="simple-link-item">
-    <a href="https://scholar.google.com/citations?user=7u0KVSYAAAAJ&hl=ru" target="_blank" class="simple-link">
+  <div class="publication-link-item">
+    <a href="https://scholar.google.com/citations?user=7u0KVSYAAAAJ&hl=ru" target="_blank" class="publication-link scholar">
       <i class="fas fa-graduation-cap"></i>
       Google Scholar
     </a>
   </div>
-  <div class="simple-link-item">
-    <a href="https://elibrary.ru/author_items.asp?authorid=1004017&show_refs=1" target="_blank" class="simple-link">
+  <div class="publication-link-item">
+    <a href="https://elibrary.ru/author_items.asp?authorid=1004017&show_refs=1" target="_blank" class="publication-link elibrary">
       <i class="fas fa-book"></i>
       eLibrary
     </a>
