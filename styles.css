@@ -12,16 +12,17 @@
 }
 
 .hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    display: table;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .hero-photo {
-    flex-shrink: 0;
+    display: table-cell;
+    vertical-align: middle;
+    width: 200px;
+    padding-right: 2rem;
 }
 
 .profile-photo {
@@ -34,7 +35,8 @@
 }
 
 .hero-text {
-    flex: 1;
+    display: table-cell;
+    vertical-align: middle;
     text-align: left;
 }
 
