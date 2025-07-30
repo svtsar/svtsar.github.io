@@ -11,15 +11,22 @@ format:
 ---
 
 :::: hero-section
-# Сергей Царегородцев
+<div class="hero-content">
+  <div class="hero-photo">
+    <img src="cover.png" alt="Сергей Царегородцев" class="profile-photo">
+  </div>
+  <div class="hero-text">
+    ## Сергей Царегородцев
 
 **Преподаватель-фармакологии \| Врач-исследователь**
 
 *Российский университет медицины*
 
-::: social-links
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--0254--0516-green?style=flat-square&logo=orcid)](https://orcid.org/0000-0002-0254-0516) 
-:::
+    ::: social-links
+    [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--0254--0516-green?style=flat-square&logo=orcid)](https://orcid.org/0000-0002-0254-0516) 
+    :::
+  </div>
+</div>
 ::::
 
 ## О себе
@@ -72,7 +79,7 @@ format:
 -   Статистический анализ и визуализация в R (ggplot2, dplyr), работа с Quarto и Markdown
 -   Git / GitHub
 -   Поиск и систематизация научной литературы: Zotero, Research Rabbit
-::::
+:::
 
 ## Контакты
 
